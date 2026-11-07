@@ -27,8 +27,8 @@ import androidx.compose.ui.semantics.Role
 import za.co.octagon.noughtscrosses.BuildConfig
 import za.co.octagon.noughtscrosses.data.Settings
 
-/** Public URL of the privacy policy (docs/privacy-policy.html, hosted e.g. on GitHub Pages). */
-const val PRIVACY_POLICY_URL = "https://example.com/noughts-crosses/privacy-policy.html" // TODO: replace before release
+/** Public URL of the privacy policy: docs/privacy-policy.html served by GitHub Pages. */
+const val PRIVACY_POLICY_URL = "https://faraimacheka.github.io/Xs-Notes/privacy-policy.html"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

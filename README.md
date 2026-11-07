@@ -9,7 +9,7 @@ Spec: https://claude.ai/artifact/Ncq5FsdpDEzrg8YyDRSMjF
 | --- | --- |
 | `game/` | Pure Kotlin game logic: board, rules, AI (minimax). No Android dependencies. |
 | `app/` | Android app: Jetpack Compose UI, ViewModels, settings (DataStore). |
-| `docs/privacy-policy.html` | Privacy policy to host publicly (e.g. GitHub Pages). |
+| `docs/privacy-policy.html` | Privacy policy, served by GitHub Pages from `/docs` on `main`. |
 
 ## Build and test
 
@@ -36,6 +36,7 @@ gradlew :app:installDebug                    # install on a connected phone or e
 
 ## Before the first release
 
-- [ ] Host `docs/privacy-policy.html` and put its URL in `PRIVACY_POLICY_URL` (`app/src/main/java/.../ui/SettingsScreen.kt`) and in Play Console.
+- [x] Privacy policy hosted on GitHub Pages: https://faraimacheka.github.io/Xs-Notes/privacy-policy.html (used in the app's Settings screen)
+- [ ] Paste that privacy policy URL into Play Console (App content > Privacy policy).
 - [ ] Confirm the package ID `za.co.octagon.noughtscrosses`; it cannot change after publishing.
 - [ ] Store assets: 512x512 icon, 1024x500 feature graphic, 2+ phone screenshots.
