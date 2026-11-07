@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 108dp adaptive icon foreground; artwork stays inside the 66dp safe zone (21..87). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Grid -->
+    <path
+        android:pathData="M46,30 L46,78 M62,30 L62,78 M30,46 L78,46 M30,62 L78,62"
+        android:strokeWidth="2.5"
+        android:strokeColor="#66FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- X, top-left cell -->
+    <path
+        android:pathData="M32,32 L44,44 M44,32 L32,44"
+        android:strokeWidth="4"
+        android:strokeColor="#FFF25F4C"
+        android:strokeLineCap="round" />
+    <!-- O, centre cell -->
+    <path
+        android:pathData="M54,48 A6,6 0 1,1 53.99,48 Z"
+        android:strokeWidth="4"
+        android:strokeColor="#FF2EC4B6" />
+    <!-- X, bottom-right cell -->
+    <path
+        android:pathData="M64,64 L76,76 M76,64 L64,76"
+        android:strokeWidth="4"
+        android:strokeColor="#FFF25F4C"
+        android:strokeLineCap="round" />
+</vector>
