@@ -38,5 +38,5 @@ gradlew :app:installDebug                    # install on a connected phone or e
 
 - [x] Privacy policy hosted on GitHub Pages: https://faraimacheka.github.io/Xs-Notes/privacy-policy.html (used in the app's Settings screen)
 - [ ] Paste that privacy policy URL into Play Console (App content > Privacy policy).
-- [ ] Confirm the package ID `za.co.octagon.noughtscrosses`; it cannot change after publishing.
+- [ ] Confirm the package ID `za.co.stripedape.noughtscrosses`; it cannot change after publishing.
 - [ ] Store assets: 512x512 icon, 1024x500 feature graphic, 2+ phone screenshots.

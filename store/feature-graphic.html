@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feature Graphic</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  /* Google Play feature graphic: exactly 1024x500. Rendered to PNG with headless Edge. */
+  :root { --navy: #1D2A3A; --x: #FF6B57; --o: #3CD3C4; --grid: #4B5D73; --ink: #FFFFFF; --muted: #B5BFCC; }
+  html, body { margin: 0; width: 1024px; height: 500px; overflow: hidden; background: var(--navy); }
+  body { font-family: Roboto, "Segoe UI", sans-serif; color: var(--ink); position: relative; }
+  .glow { position: absolute; right: -80px; top: -60px; width: 620px; height: 620px; border-radius: 50%;
+          background: radial-gradient(circle, rgba(60,211,196,0.16) 0%, rgba(60,211,196,0) 65%); }
+  .copy { position: absolute; left: 72px; top: 50%; transform: translateY(-50%); width: 470px; }
+  h1 { font-size: 64px; line-height: 1.02; font-weight: 900; margin: 0 0 20px; letter-spacing: -1px; }
+  h1 .amp { color: var(--x); }
+  p { font-size: 26px; line-height: 1.35; color: var(--muted); margin: 0 0 28px; font-weight: 400; }
+  .chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip { font-size: 18px; font-weight: 500; padding: 8px 16px; border-radius: 999px; border: 2px solid #3A4A5E; color: #E8ECF1; }
+  svg.board { position: absolute; right: 70px; top: 60px; width: 380px; height: 380px; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="copy">
+    <h1>Noughts <span class="amp">&amp;</span><br>Crosses</h1>
+    <p>Play a friend on one phone, or take on the computer.</p>
+    <div class="chips">
+      <span class="chip">2 Players</span>
+      <span class="chip">Easy</span>
+      <span class="chip">Medium</span>
+      <span class="chip">Hard</span>
+    </div>
+  </div>
+
+  <!-- Board: X wins on the diagonal -->
+  <svg class="board" viewBox="0 0 300 300" fill="none" stroke-linecap="round">
+    <g stroke="var(--grid)" stroke-width="7">
+      <line x1="100" y1="10" x2="100" y2="290"/><line x1="200" y1="10" x2="200" y2="290"/>
+      <line x1="10" y1="100" x2="290" y2="100"/><line x1="10" y1="200" x2="290" y2="200"/>
+    </g>
+    <g stroke="var(--x)" stroke-width="13">
+      <path d="M25 25 L75 75 M75 25 L25 75"/>
+      <path d="M125 125 L175 175 M175 125 L125 175"/>
+      <path d="M225 225 L275 275 M275 225 L225 275"/>
+    </g>
+    <g stroke="var(--o)" stroke-width="13">
+      <circle cx="250" cy="50" r="27"/>
+      <circle cx="50" cy="250" r="27"/>
+      <circle cx="150" cy="250" r="27"/>
+    </g>
+    <line x1="18" y1="18" x2="282" y2="282" stroke="#FFFFFF" stroke-width="10" opacity="0.9"/>
+  </svg>
+</body>
+</html>

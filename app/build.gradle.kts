@@ -14,11 +14,11 @@ val keystoreProps = Properties().apply {
 }
 
 android {
-    namespace = "za.co.octagon.noughtscrosses"
+    namespace = "za.co.stripedape.noughtscrosses"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "za.co.octagon.noughtscrosses"
+        applicationId = "za.co.stripedape.noughtscrosses"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
